@@ -264,6 +264,18 @@ PRs welcome! Please include:
 - Screenshots (UI changes)  
 - Tested platforms
 
+### macOS Security Notice
+
+Quantum Clipboard is an open-source app and is not notarized.
+
+macOS may block it on first launch.
+
+**Fix (one time):**
+- Right-click the app → Open → Open  
+OR
+```bash
+xattr -dr com.apple.quarantine "/Applications/Quantum Clipboard.app"
+```
 ## License
 
 MIT © Ing Muyleang
