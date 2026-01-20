@@ -208,7 +208,11 @@ function keyEventToAccelerator(e: KeyboardEvent) {
 type ModalKind = "none" | "tags" | "editText" | "renameImage";
 
 /** Click-outside hook (capture phase) */
-function useOutsideClick(ref: React.RefObject<HTMLElement>, onOutside: () => void, enabled: boolean) {
+function useOutsideClick(
+  ref: React.RefObject<HTMLElement | null>,
+  onOutside: () => void,
+  enabled: boolean
+) {
   useEffect(() => {
     if (!enabled) return;
 
@@ -249,7 +253,6 @@ function ColorRowHex({
 }) {
   const [open, setOpen] = useState(false);
   const popRef = useRef<HTMLDivElement | null>(null);
-
   useOutsideClick(
     popRef,
     () => {
