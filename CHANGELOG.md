@@ -10,6 +10,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cloud Sync Architecture (Self-hosted implementation)
 - Integration with local AI models for content analysis
 
+## [0.1.3] - 2026-01-20
+### Fixed
+- Fixed an issue where the Hex color picker closed immediately when clicking or dragging inside it.
+- Prevented the Escape key from closing the main popup while a color picker is open.
+- Resolved interaction conflicts between Electron draggable regions and interactive color picker components.
+
+### Improved
+- Theme color customization is now stable and uninterrupted while adjusting colors.
+- Improved usability of `react-colorful` popovers with proper focus handling.
+- Cleaner and more predictable behavior when editing theme colors.
+
+### Added
+- Support for customizing additional theme colors:
+    - Item text color
+    - Item muted text color
+    - Control text color
+- Safer outside-click detection for closing color pickers intentionally.
+
+### Internal
+- Refactored color picker logic to isolate open/close state per component.
+- Improved event propagation control (`stopPropagation`) to avoid accidental UI dismissal.
+- Minor UI and state-handling cleanup for maintainability.
+
 ## [0.1.2] - 2026-01-20
 ### Added
 - **Advanced Theming Engine:** Users can now customize the visual aspects of the clipboard manager.
