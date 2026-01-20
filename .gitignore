@@ -1,104 +1,101 @@
-# ===============================
+# --------------------
 # Node / npm
-# ===============================
+# --------------------
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# ===============================
+# --------------------
 # Build outputs
-# ===============================
+# --------------------
 dist/
+build/
 out/
 release/
-build/*.iconset/
 
-# electron-builder artifacts
+# Electron packaged apps
 *.dmg
+*.zip
 *.exe
 *.AppImage
 *.deb
 *.rpm
 *.snap
-*.zip
-*.tar.gz
-*.blockmap
-latest*.yml
 
-# ===============================
+# macOS app bundles (generated)
+*.app
+Quantum Clipboard.app
+
+# --------------------
 # Vite / React
-# ===============================
+# --------------------
 .vite/
-.vite-cache/
 .eslintcache
 
-# ===============================
+# --------------------
 # TypeScript
-# ===============================
+# --------------------
 *.tsbuildinfo
 
-# ===============================
-# Electron
-# ===============================
-app.asar
-app.asar.unpacked/
+# --------------------
+# Environment variables
+# --------------------
+.env
+.env.*
+!.env.example
 
-# ===============================
-# Native modules
-# ===============================
-**/build/Release/
-**/*.node
+# --------------------
+# Logs
+# --------------------
+logs/
+*.log
 
-# ===============================
+# --------------------
+# OS / Editor junk
+# --------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# IntelliJ / WebStorm
+.idea/
+
+# --------------------
 # SQLite databases (runtime data)
-# ===============================
+# --------------------
 *.sqlite
 *.sqlite-journal
 *.sqlite-shm
 *.sqlite-wal
 
-# ===============================
-# OS files
-# ===============================
-.DS_Store
-.AppleDouble
-.LSOverride
-Thumbs.db
-ehthumbs.db
-Desktop.ini
+# --------------------
+# Electron cache
+# --------------------
+.cache/
+.electron/
 
-# ===============================
-# IDE / Editor
-# ===============================
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea/
+# --------------------
+# Temporary / backups
+# --------------------
+*.tmp
+*.bak
 *.swp
-*.swo
+*~
 
-# ===============================
-# Environment files
-# ===============================
-.env
-.env.*
-!.env.example
+# --------------------
+# Homebrew artifacts
+# --------------------
+Caskroom/
+brew-*
 
-# ===============================
-# Logs
-# ===============================
-logs/
-*.log
-
-# ===============================
-# Coverage
-# ===============================
-coverage/
-
-# ===============================
-# Temporary files
-# ===============================
-tmp/
-temp/
+# --------------------
+# Native module builds
+# --------------------
+build/Release/
