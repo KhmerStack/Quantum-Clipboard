@@ -1,4 +1,4 @@
-# ClipVault
+# Quantum Clipboard (ClipVault)
 
 **ClipVault** is a fast, offline clipboard manager for text and images.  
 Built with Electron + React + Vite + SQLite (better-sqlite3).  
